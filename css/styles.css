@@ -32,6 +32,9 @@ img {
   display: block;
   margin: 0 auto;
 }
+input {
+  font-family: inherit;
+}
 /* common */
 .container {
   max-width: 1158px;
@@ -398,11 +401,15 @@ img {
   justify-content: flex-start;
   align-items: flex-start;
 }
+.footer-social {
+  margin-right: 85px;
+}
 .end-page > .container {
   display: flex;
   align-items: baseline;
 }
-.container .footer-social {
+.container .footer-social,
+.container .news-letter {
   display: flex;
   flex-direction: column;
 }
@@ -433,4 +440,45 @@ img {
   background-color: #2e2f42;
   height: 312px;
   padding: 100px 0;
+}
+
+/* Subskribe section */
+.footer-form {
+  display: flex;
+  flex-direction: column;
+}
+.label-subskribe {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+#footer-email {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  width: 264px;
+  height: 40px;
+  background-color: transparent;
+}
+input::placeholder {
+  padding: 8px 212px 8px 16px;
+  color: #fff;
+}
+.button-subskribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+  border-radius: 4px;
+  padding: 8px 24px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  background-color: #4d5ae5;
+  fill: #fff;
+  margin-left: 16px;
 }
