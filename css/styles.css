@@ -443,35 +443,38 @@ input {
 }
 
 /* Subskribe section */
-.footer-form {
+.news-letter .footer-form {
   display: flex;
-flex-direction: column;
-  gap: 24px;
+gap: 24px;
 }
-.label-subskribe {
+.news-letter-title {
   font-weight: 500;
+  font-size: 16px;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
+  line-height: 1.5;
 }
-#footer-email {
+.label-subskribe > #footer-email {
   border: 1px solid #fff;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   width: 264px;
   height: 40px;
   background-color: transparent;
-  padding: 8px 16px;
   color: #fff;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
 }
 input::placeholder {
   color: #fff;
 }
 .button-subskribe {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  fill: #fff;
+  justify-content: flex-start;
   border-radius: 4px;
   border: none;
   background-color: #4d5ae5;
@@ -481,5 +484,9 @@ input::placeholder {
   padding: 8px 24px;
   letter-spacing: 0.04em;
   text-align: center;
+  margin: 0;
+}
+.icon-subskribe {
+  fill: #fff;
   margin-left: 16px;
 }
