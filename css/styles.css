@@ -575,18 +575,21 @@ input::placeholder {
   color: #8e8f99;
   margin-bottom: 8px;
 }
-.form-modal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 8px;
+.form-texarea-modal {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
   margin-bottom: 16px;
+}
+.form-modal {
+  display: inline-block;
+  align-items: center;
 }
 .label-modal {
   margin-bottom: 4px;
   display: block;
-  line-height: 1.17;
 }
 .form-input {
   position: relative;
@@ -642,19 +645,18 @@ input::placeholder {
 .modal-link-privacy {
   text-decoration: underline;
   color: #4d5ae5;
+  cursor: pointer;
 }
 .visually-hidden {
   display: none;
 }
-.label-accept-privacy {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  cursor: pointer;
-  
-}
-.icon-checkbox-modal {
-  margin-bottom: 24px;
+.form-checkbox-modal {
+ margin-bottom: 24px;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: #8e8f99;
 }
 .span-checkbox {
   fill: transparent;
@@ -680,10 +682,7 @@ input::placeholder {
 .send-btn {
   display: block;
   align-items: flex-start;
-  justify-content: center;
-  flex-direction: row;
-  gap: 10px;
-  margin: 24px auto;
+  margin: auto;
   cursor: pointer;
   min-width: 169px;
 }
